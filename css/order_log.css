@@ -1,0 +1,137 @@
+.report_content{
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+.report, .indiv_report{
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    margin-left: 32.5%;
+    margin-bottom: 3%;
+    padding: 10px;
+    width: 35vw;
+}
+.report:first-child{
+    margin-top: 15%;
+}
+.indiv_report:first-child{
+    margin-top: 10%;
+}
+#title{
+    border-left: 5px solid lightsteelblue;
+    border-bottom: 2px solid lightsteelblue;
+    padding: 1% 3%;
+}
+#rep{
+    display: block;
+    padding: 0 3%;
+}
+#report_about{
+    padding: 3%;
+    border-top: 1px solid lightslategray;
+}
+.openBtn{
+    margin-left: 90%;
+}
+#indiv_namebox{
+    background-color: lavender;
+}
+#indiv_name{
+    margin-left: 37%;
+}
+#back{
+    color: cornflowerblue;
+}
+#gp_ch{
+    cursor: pointer;
+    margin: 2% 1%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: lightyellow;
+    border: unset;
+}
+.gp_chbox{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 95vw;
+    margin: 6%;
+}
+.gp_box{
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-bottom: 1px solid black;
+    width: 50vw;
+}
+#gp_ttl{
+    margin: 5% 3% 0;
+}
+#gp_ch:first-child{
+    margin-left: 3%;
+}
+.ordconf{
+    margin-left: 5%;
+}
+@media only screen and (max-width: 767px){
+    .report{
+        margin-top: 5%;
+        margin-left: 25%;
+        width: 50vw;
+    }
+    .indiv_report{
+        margin-top: 5%;
+        margin-left: 7%;
+        width: 80vw;
+
+    }
+    .report:first-child{
+        margin-top: 50%;
+    }
+    .indiv_report:first-child{
+        margin-top: 20%;
+    }
+    .openBtn{
+        margin-left: 85%;
+    }
+    #indiv_namebox{
+        width: 100vw;
+        margin: 12% 0;
+        padding: 3% 0;
+    }
+    #indiv_name{
+        margin-left: 13%;
+    }
+    .gp_chbox{
+        width: 100%;
+        margin: 12% 0 0 0;
+    }
+    #gp_ttl{
+        margin: 0 20%;
+    }
+    #gp_ch{
+        -webkit-appearance: none;
+        padding: 2%;
+        margin-left: auto;
+        color: black;
+    }
+    .gp_chbox{
+        width: 100%;
+        margin: 12% 0 0 0;
+    }
+    .gp_box{
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+    #gp_ch{
+        -webkit-appearance: none;
+        border-radius: 50%;
+        padding: 2%;
+        margin-left: 2%;
+        color: black;
+    }
+    .ordconf{
+        margin-left: 0;
+    }
+}

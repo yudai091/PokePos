@@ -1,0 +1,85 @@
+li {
+  list-style: none;
+}
+.main {
+  width: 100vw;
+  position: fixed;
+  margin-top: 5%;
+  z-index: -1;
+}
+label {
+  width: 50%;
+  color: #ffffff;
+  background-color: #384878;
+  cursor: pointer;
+}
+
+#selectImg {
+  margin: 0;
+  font-size: small;
+}
+#goods-ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#goods-li {
+  display: block;
+  float: left;
+  width: 20%;
+  margin: 10px 0;
+}
+.itemlist img {
+  width: 50%;
+  height: 100px;
+}
+.text-right {
+  text-align: right;
+}
+.btn-ref {
+  font-size: 13px;
+  margin: 0;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 767px) {
+  h5 {
+    width: 100vw;
+  }
+  .main {
+    margin-top: 10%;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .pagination {
+    width: 90vw !important;
+    padding-bottom: 15%;
+  }
+  .item-body {
+    width: 105%;
+    margin-left: 5%;
+  }
+  .itemlist {
+    margin-top: -10%;
+  }
+  .itemlist img {
+    width: 100%;
+  }
+  #goods-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  #goods-li {
+    width: 30%;
+    margin: -1% 10%;
+  }
+  #goods-cnt {
+    margin-left: -75%;
+  }
+  .pagination {
+    padding: 0;
+    width: 100vw;
+    justify-content: flex-start;
+  }
+}

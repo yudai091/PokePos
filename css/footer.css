@@ -1,0 +1,12 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: paleturquoise;
+    z-index: -1;
+}
+#rights{
+    color: black;
+    font-size: small;
+}

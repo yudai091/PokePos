@@ -1,0 +1,9 @@
+.done{
+    background-color: whitesmoke;
+    width: 100vw;
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

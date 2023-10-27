@@ -1,0 +1,288 @@
+li {
+  list-style: none;
+}
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: -1;
+}
+.wrapper {
+  height: 90vh;
+  width: 70vw;
+  padding: 3% 0;
+  border-right: 2px solid black;
+}
+.last-wrapper {
+  margin-bottom: -10%;
+}
+#goods-ul {
+  margin-top: -5%;
+}
+#goods-ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#goods-li {
+  display: block;
+  float: left;
+  width: 30%;
+  margin: 10px 0;
+}
+#goods-li:nth-child(3n-1) {
+  margin: 10px 5%;
+}
+.itemlist img {
+  width: 50%;
+  height: 100px;
+}
+.item-form {
+  float: right;
+  margin-top: -30px;
+}
+.item-form input {
+  width: 20px;
+  padding: 0 5px;
+  text-align: right;
+}
+.cartlist {
+  overflow: auto;
+  width: 100%;
+  height: 300px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-left-style: outset;
+  border-right-style: inset;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #cacaca,
+    #cacaca 2px,
+    transparent 0,
+    transparent 50px
+  );
+}
+.cart-table {
+  width: 102%;
+  margin-top: -1%;
+  margin-left: -1%;
+  border-collapse: collapse;
+}
+.total_table {
+  width: 100.5%;
+  border-collapse: collapse;
+}
+.text-right {
+  text-align: right;
+}
+.cart-btn {
+  text-align: center;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: auto;
+}
+th,
+td {
+  text-align: center;
+  border: 1px solid #ebeced;
+  background: white;
+  vertical-align: middle;
+  padding: 15px 10px 5px;
+}
+th {
+  background-color: #4c586f;
+  color: #fff;
+}
+.cart-table button {
+  margin: 0;
+}
+#sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#note_tr td {
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid black;
+  background: #fff;
+  padding: 5px;
+}
+#note_tr input {
+  text-align: center;
+}
+.cart-btn {
+  text-align: center;
+}
+#note_tr th {
+  width: 70%;
+  border: unset;
+}
+#note_tr {
+  width: 100%;
+}
+#product_nameth {
+  width: 84% !important;
+}
+.pagination {
+  width: 60vw !important;
+}
+.pagination li {
+  padding: 0 1% !important;
+}
+.pagination li .page .active {
+  margin-right: 5%;
+}
+.btn-ref {
+  font-size: 13px;
+  margin: 0;
+  border-radius: 5px;
+}
+.chbox {
+  display: none;
+}
+#ch_content2 {
+  margin-top: -5%;
+  height: 62vh;
+  width: 27vw;
+}
+.btn-conf,
+.btn-fin {
+  display: flex;
+  justify-content: center;
+}
+.btn-fin {
+  margin-top: 3%;
+}
+.toconf-sp {
+  display: none;
+}
+#toconf-pc {
+  width: 15vw;
+  margin-top: 15%;
+}
+.orcf {
+  margin-top: 5%;
+}
+@media only screen and (max-width: 767px) {
+  h5 {
+    width: 100vw;
+  }
+  .main {
+    display: block;
+  }
+  .wrapper {
+    width: 100vw;
+    height: auto;
+  }
+  .last-wrapper {
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+  .container {
+    margin-left: 0;
+  }
+  .spBtns {
+    margin-top: 25%;
+  }
+  #ch_content2,
+  #ch_content2-5 {
+    padding: 0;
+    width: 90vw;
+    height: 55vh;
+    margin: 15% 5% 0;
+  }
+  #ch_content2 {
+    display: none;
+  }
+  .chbox {
+    display: block;
+    width: 100vw;
+    margin: 3% 25% 0;
+  }
+  #toconf-pc {
+    width: 50vw;
+    margin-left: 25%;
+  }
+  #toconf-sp {
+    width: 50vw;
+    border: 2px solid #006fab;
+    color: white;
+    background: #6cccff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #ord_ch1,
+  #ord_ch2 {
+    background: #ffffc2;
+    border: 1.5px solid #71714e;
+  }
+  .ch_menu {
+    display: inline-block;
+  }
+  .ch_menu::before {
+    content: "";
+    width: 16px; /* アイコンの横幅 */
+    height: 16px; /* アイコンの高さ */
+    background: url(../image/menu.svg) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+  }
+  .pagination {
+    width: 90vw !important;
+    padding-bottom: 15%;
+  }
+  .item-body {
+    width: 105%;
+    margin-left: 5%;
+  }
+  .item-body p {
+    margin-top: -5%;
+  }
+  .itemlist {
+    margin-top: -17%;
+  }
+  .itemlist img {
+    width: 100%;
+  }
+  .item-form {
+    margin-top: 0;
+  }
+  #goods-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  #goods-li {
+    margin: 5% 10%;
+  }
+  #goods-li:nth-child(3n-1) {
+    margin: 5% 10%;
+  }
+  #goods-cnt {
+    margin-left: -75%;
+  }
+  .pagination {
+    padding: 0;
+    width: 100vw;
+    justify-content: flex-start;
+  }
+  .btn-conf {
+    margin-left: 5%;
+  }
+  .btn-fin {
+    margin-top: 20%;
+  }
+  .toconf-pc {
+    display: none;
+  }
+  .toconf-sp {
+    display: flex;
+    margin-left: 0;
+  }
+  .orcf {
+    margin-top: 0;
+  }
+}
